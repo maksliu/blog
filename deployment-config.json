@@ -1,0 +1,10 @@
+{
+    "type": "sftp",
+    "host": "192.168.91.130",
+    "username": "root",
+    "password": "",
+    "port": 22,
+    "remotePath": "/wwwroot/myblog/",
+    "uploadOnSave": true,
+    "sshKeyFile":"~/.ssh/id_rsa"
+}
