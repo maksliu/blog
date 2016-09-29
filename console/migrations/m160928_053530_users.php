@@ -19,8 +19,9 @@ class m160928_053530_users extends Migration
             'email'=>$this->string()->notNull()->unique()->comment('用户邮箱'),
             'last_login_time'=>$this->intger()->comment('最后登录时间'),
             'last_login_ip'=>$this->string(15)->comment('最后登录Ip'),
-            'create_time'=>$this->integer()->notNull()->comment('创建时间'),
-            'update_time'=>$this->integer()->notNull()->comment('修改时间')
+
+            'created_at'=>$this->integer()->notNull()->comment('创建时间'),
+            'updated_at'=>$this->integer()->notNull()->comment('修改时间')
         ]);
     }
 

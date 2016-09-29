@@ -24,8 +24,9 @@ class m160928_125556_sections extends Migration
             'depth'=>$this->intger()->notNull()->defaultValue(0)->comment('上级Id'),
             'order_num'=>$this->intger()->defaultValue(0)->comment('排序号'),
             'allow_child'=>$this->smallInteger(1)->defaultValue(1)->comment('是否允许添加下级 1-yes 0-no'),
-            'create_time'=>$this->integer()->notNull()->comment('创建时间'),
-            'update_time'=>$this->integer()->notNull()->comment('修改时间')
+
+            'created_at'=>$this->integer()->notNull()->comment('创建时间'),
+            'updated_at'=>$this->integer()->notNull()->comment('修改时间')
         ]);
     }
 

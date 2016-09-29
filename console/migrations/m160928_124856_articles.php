@@ -22,8 +22,9 @@ class m160928_124856_articles extends Migration
             'section_opid'=>$this->string(6)->notNull()->comment('栏目唯一编号'),
             'comtent'=>$this->text()->comment('内容'),
             'status'=>$this->smallInteger()->notNull()->defaultValue(0)->comment('发布状态 0-草稿 1-发布'),
-            'create_time'=>$this->integer()->notNull()->comment('创建时间'),
-            'update_time'=>$this->integer()->notNull()->comment('修改时间')
+
+            'created_at'=>$this->integer()->notNull()->comment('创建时间'),
+            'updated_at'=>$this->integer()->notNull()->comment('修改时间')
         ]);
     }
 
