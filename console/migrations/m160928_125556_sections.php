@@ -20,9 +20,9 @@ class m160928_125556_sections extends Migration
             'name'=>$this->string(100)->notNull()->comment('用户名 同级目录下栏目名唯一'),
             'keywords'=>$this->string()->comment('关键字'),
             'description'=>$this->string()->comment('描述'),
-            'pid'=>$this->intger()->notNull()->defaultValue(0)->comment('上级Id'),
-            'depth'=>$this->intger()->notNull()->defaultValue(0)->comment('上级Id'),
-            'order_num'=>$this->intger()->defaultValue(0)->comment('排序号'),
+            'pid'=>$this->integer()->notNull()->defaultValue(0)->comment('上级Id'),
+            'depth'=>$this->integer()->notNull()->defaultValue(0)->comment('上级Id'),
+            'order_num'=>$this->integer()->defaultValue(0)->comment('排序号'),
             'allow_child'=>$this->smallInteger(1)->defaultValue(1)->comment('是否允许添加下级 1-yes 0-no'),
 
             'created_at'=>$this->integer()->notNull()->comment('创建时间'),

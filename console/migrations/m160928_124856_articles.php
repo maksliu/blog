@@ -18,7 +18,7 @@ class m160928_124856_articles extends Migration
             'images'=>$this->string()->comment('文章图片'),
             'keywords'=>$this->string()->comment('关键字'),
             'description'=>$this->string()->comment('描述'),
-            'section_id'=>$this->intger()->notNull()->comment('栏目ID'),
+            'section_id'=>$this->integer()->notNull()->comment('栏目ID'),
             'section_opid'=>$this->string(6)->notNull()->comment('栏目唯一编号'),
             'comtent'=>$this->text()->comment('内容'),
             'status'=>$this->smallInteger()->notNull()->defaultValue(0)->comment('发布状态 0-草稿 1-发布'),
